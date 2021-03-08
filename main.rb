@@ -12,4 +12,13 @@ EXCHANGE = 'NYSE'
 TYPE = 'Stock'
 FORMAT = 'JSON'
 
-puts API_KEY
+puts "API Key is: #{API_KEY}"
+
+url = "#{PREFIX}#{PRICE_ENDPOINT}?symbol=#{SYMBOL}&apikey=#{API_KEY}"
+
+puts "URL is: #{url}"
+
+response = RestClient.get url
+
+json_response = JSON.parse response
+puts json_response['price']
