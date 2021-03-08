@@ -1,0 +1,11 @@
+puts 'Hello World'
+
+API_KEY = ''
+PREFIX = 'https://api.twelvedata.com'
+QUOTE_ENDPOINT = '/quote'
+PRICE_ENDPOINT = '/price'
+SYMBOL = 'GME'
+INTERVAL = '1min'
+EXCHANGE = 'NYSE'
+TYPE = 'Stock'
+FORMAT = 'JSON'
