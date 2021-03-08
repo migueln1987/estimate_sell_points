@@ -1,4 +1,6 @@
 require_relative './.api_key.rb'
+require 'rest-client'
+require 'json'
 
 API_KEY = $api_key
 PREFIX = 'https://api.twelvedata.com'
